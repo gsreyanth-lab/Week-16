@@ -1,0 +1,4 @@
+nmap --script vuln 192.168.1.11
+nmap --script smb-enum-shares -p445 192.168.1.11
+nmap --script discovery 192.168.1.11
+nmap --script brute 192.168.1.11        # only on systems you're authorised to test
