@@ -1,0 +1,8 @@
+nmap -sn 192.168.1.0/24          # Ping scan: which hosts are up
+sudo nmap -sS 192.168.1.11       # TCP SYN scan (needs root)
+nmap -sT 192.168.1.11            # TCP connect scan (no root needed)
+sudo nmap -sU 192.168.1.11       # UDP scan (slow)
+nmap -sV 192.168.1.11            # Version detection
+sudo nmap -O 192.168.1.11        # OS detection
+sudo nmap -A 192.168.1.11        # -O + -sV + -sC + traceroute
+nmap -sC 192.168.1.11            # Default NSE scripts
